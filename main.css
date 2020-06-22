@@ -1,0 +1,144 @@
+body {
+  width: 950px;
+  margin: auto;
+  height: 100%;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: black;
+  font-family: 'astro';
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+input#un-mute {
+  display: none;
+}
+
+.unmute img {
+  display: none;
+}
+
+input#un-mute:checked ~ .unmute img {
+  display: initial;
+}
+
+input#un-mute:checked ~ .mute img {
+  display: none;
+}
+
+#grid {
+  margin: auto;
+  width: 420px;
+  height: 420px;
+  margin-top: 7%;
+}
+#game_assets {
+  float: right;
+  text-align: center;
+  font-size: 30px;
+  background-color: rgb(55, 58, 243);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.Button {
+  background-color: #9c61fc;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 24px;
+  text-decoration: none;
+  border: 1.5px solid black;
+}
+.cell {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 10px;
+  float: left;
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  background-color: white;
+  font-size: 56px;
+  line-height: 110px;
+  text-align: center;
+  margin: auto;
+  opacity: 0.7;
+}
+
+@font-face {
+  font-family: 'astro';
+  src: url('/Users/sanddwichh/Desktop/exo 2048/Teutonic.ttf');
+}
+
+h1 {
+  font-size: 5em;
+  color: rgb(87, 58, 134);
+  text-shadow: #000000 2px 2px, #000000 -2px 2px, #000000 -2px -2px,
+    #000000 2px -2px;
+  text-align: center;
+}
+.val2 {
+  background-color: rgb(36, 148, 201);
+  display: inline-block;
+}
+
+.val4 {
+  background-color: rgb(192, 60, 60);
+  display: inline-block;
+}
+
+.val8 {
+  background-color: rgb(68, 216, 154);
+  display: inline-block;
+}
+
+.val16 {
+  background-color: #ff768c;
+  display: inline-block;
+}
+
+.val32 {
+  background-color: #ff7145;
+  display: inline-block;
+}
+
+.val64 {
+  background-color: #c7ff8e;
+  display: inline-block;
+}
+
+.val128 {
+  background-color: #ff49a3;
+
+  display: inline-block;
+}
+
+.val256 {
+  background-color: #d30021;
+  display: inline-block;
+}
+
+.val512 {
+  background-color: #ffbf00;
+  display: inline-block;
+}
+
+.val1024 {
+  background-color: rgb(110, 172, 110);
+  display: inline-block;
+}
+
+.val2048 {
+  background-color: rgb(75, 123, 255);
+  display: inline-block;
+}
